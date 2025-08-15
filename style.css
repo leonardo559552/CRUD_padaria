@@ -1,0 +1,84 @@
+/* Estilo geral do body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho / Navbar */
+.navbar {
+    padding: 15px 30px;
+}
+
+/* Link adicional na navbar */
+.navbar .nav-link {
+    color: #ffffff !important;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* Título principal */
+h1 {
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+/* Subtítulo */
+p.text-muted {
+    font-size: 1.1rem;
+}
+
+/* Cards das opções */
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Título dos cards */
+.card-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Texto dos cards */
+.card-text {
+    font-size: 0.95rem;
+    color: #555555;
+}
+
+/* Botões dentro dos cards */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Responsividade: cards ocupam 100% em telas pequenas */
+@media (max-width: 767px) {
+    .row.g-3 .col-md-4, 
+    .row.g-3 .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
