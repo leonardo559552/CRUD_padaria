@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $senha = trim($_POST["senha"]);
     $tipo  = $_POST["tipo"];
 
-    // Criptografar senha
+   
     $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
     // Preparar e inserir
